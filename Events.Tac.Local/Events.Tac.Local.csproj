@@ -55,8 +55,8 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
@@ -121,9 +121,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\BreadcrumbBuilder.cs" />
+    <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Models\EventIntro.cs" />
+    <Compile Include="Models\get.cs" />
+    <Compile Include="Models\NavigationItem.cs" />
+    <Compile Include="Models\NavigationMenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Interfaces\IItem.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Interfaces\IRenderingContext.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Properties\AssemblyInfo.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\SitecoreImplementation\SitecoreItem.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\SitecoreImplementation\SitecoreRenderingContext.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Testing\ExpandoTestItemBuilder.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Testing\TestItem.cs" />
+    <Compile Include="TAC.Sitecore.Abstractions\Testing\TestRenderingContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Css\addition.css" />
@@ -163,6 +179,39 @@
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
     <Content Include="Scripts\Navigation.js" />
     <Content Include="Scripts\Sitecore.Foundation.Theming.min.js" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Mvp.Xml.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Mvp.Xml.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\RazorGenerator.Mvc.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Sitecore.Kernel.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Sitecore.Logging.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Sitecore.Mvc.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\Sitecore.Web.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Net.Http.Formatting.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Net.Http.Formatting.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Http.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Http.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Mvc.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Mvc.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Razor.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.Razor.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.Deployment.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.Deployment.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.Razor.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.Razor.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\System.Web.WebPages.xml" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\TAC.Sitecore.Abstractions.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\bin\Debug\TAC.Sitecore.Abstractions.pdb" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.csproj.FileListAbsolute.txt" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.dll" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.pdb" />
+    <Content Include="TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj" />
+    <Content Include="TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj.user" />
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -242,6 +291,15 @@
     <Content Include="Views\TAC\Events\SideContent.cshtml" />
     <Content Include="Views\TAC\Events\PageContent.cshtml" />
     <Content Include="Views\TAC\Events\Two-Column.cshtml" />
+    <Content Include="Views\TAC\Events\One-Column.cshtml" />
+    <Content Include="Views\TAC\Events\HomeContent.cshtml" />
+    <Content Include="Views\TAC\Events\FeatureRow.cshtml" />
+    <Content Include="Views\TAC\Events\FeaturedEvent.cshtml" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.csproj.CopyComplete" />
+    <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.csproj.CoreCompileInputs.cache" />
+    <None Include="TAC.Sitecore.Abstractions\packages.config" />
+    <Content Include="Views\Breadcrumb\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -252,6 +310,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Sitecore NuGet\" />
+    <Folder Include="TAC.Sitecore.Abstractions\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj">
+      <Project>{71417f51-8b93-4f15-a2bb-bb12fe286b24}</Project>
+      <Name>TAC.Sitecore.Abstractions</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

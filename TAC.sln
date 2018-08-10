@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Tac.Local", "Events.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events.Tac.Local.Tests", "Events.Tac.Local.Tests\Events.Tac.Local.Tests.csproj", "{19A8D21B-F598-40AB-8571-9BE47B9EA354}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAC.Sitecore.Abstractions", "Events.Tac.Local\TAC.Sitecore.Abstractions\TAC.Sitecore.Abstractions.csproj", "{71417F51-8B93-4F15-A2BB-BB12FE286B24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{19A8D21B-F598-40AB-8571-9BE47B9EA354}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A8D21B-F598-40AB-8571-9BE47B9EA354}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A8D21B-F598-40AB-8571-9BE47B9EA354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71417F51-8B93-4F15-A2BB-BB12FE286B24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
