@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -122,8 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\BreadcrumbBuilder.cs" />
+    <Compile Include="Business\NavigationBuilder.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Models\EventIntro.cs" />
     <Compile Include="Models\get.cs" />
     <Compile Include="Models\NavigationItem.cs" />
@@ -300,6 +304,7 @@
     <Content Include="TAC.Sitecore.Abstractions\obj\Debug\TAC.Sitecore.Abstractions.csproj.CoreCompileInputs.cache" />
     <None Include="TAC.Sitecore.Abstractions\packages.config" />
     <Content Include="Views\Breadcrumb\Index.cshtml" />
+    <Content Include="Views\Navigation\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
